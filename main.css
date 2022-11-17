@@ -372,3 +372,11 @@ a:active {
         font-size: 250%;
     }
 }
+@media only screen and (max-width: 1500px){
+    .topBar{
+        font-size: 80%;
+    }
+    .homeButton{
+        font-size: 110%;        
+    }
+}
