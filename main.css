@@ -340,7 +340,25 @@ a:active {
 
 /* Media Querie */
 
-@media only screen and (max-width: 1000px){
+
+
+@media only screen and (max-width: 1640px){
+    .topBar{
+        font-size: 60%;
+    }
+
+    .homeButton{
+        font-size: 120%; 
+        width: 50%; 
+        padding-right: 20%;   
+    }
+    .navLinks{
+        width: 50%;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 700px){
     .skillIcons{
         font-size: 150%;
     }
@@ -348,35 +366,35 @@ a:active {
     .softwareHead{
         font-size: 150%;
     }
+    
     .topBar{
         display: flexj;
         flex-direction: column;
         height: auto;
     }
+    
     .navLinks{
         display: flex;
         flex-direction: column;
         padding: 0 0 20px 0;
-
     }
+
+    .navItems{
+        margin: 10px;
+    }
+
     .homeButton{
         display: flex;
         width: 100%;
+        font-size: 120%;
         padding: 20px 0 20px 0;
         margin: 0;
         justify-content: center;
         align-items: center;
-        
     }
+    
     .backgroundHead{
         font-size: 250%;
     }
 }
-@media only screen and (max-width: 1500px){
-    .topBar{
-        font-size: 80%;
-    }
-    .homeButton{
-        font-size: 110%;        
-    }
-}
+
