@@ -1,0 +1,75 @@
+:root{
+
+    --backGroundColor: #0a0c37ff;
+    --mainColor: white;
+    --accentColor: #ff9900ff;
+    --accentColorHover: rgb(228, 137, 0);
+    --hoverColor: rgb(232, 232, 232);
+    font-family: sans-serif
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backGroundColor);
+}
+
+.calc-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.double{
+    grid-column: span 2;
+    color: white;
+    background-color: var(--accentColor);
+}
+
+.calc-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+}
+
+.calc-grid > button:hover {
+    background-color: var(--hoverColor);
+}
+
+.calc-grid .double:hover {
+    background-color: var(--accentColorHover);
+}
+
+.output{
+    grid-column: 1 / -1;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1em;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+.output .current{
+    color: var(--backGroundColor);
+    font-size: 250%;
+}
+
+.output .previous{
+    color: var(--accentColor);
+    font-size: 125%;
+}

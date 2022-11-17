@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: darkgray;
+    font-family: sans-serif;
+}
+
+.card{
+    background-color: rgba(10, 10, 10, 0.9);
+    color: white;
+    padding: 3em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+    margin: 2em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput{
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 105%;
+    margin: 0 1.5em 0 1.5em;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    width: calc(100% - 100px)
+}
+
+.searchBtn{
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(84, 84, 84);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.weather{
+    font-size: 1.2em;
+}
+
+.sidebyside{
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading{
+    display: none;
+}

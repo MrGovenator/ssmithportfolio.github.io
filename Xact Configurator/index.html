@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xact Xpressions Silk Screen Config</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <div class="xactLogo"><img src="Xact-Logo-PNG.png"></div>
+        <div class="title"><h1>Silk Screen Configurator</h1></div>
+        <div class="selectorConfig">
+            <div class="colorConfig">
+                <label id="colorQuantity">Color Quantity: </label>
+                <input type="range" min="1" max="9" value="5" id="colorSlider"><span id="sliderCount">5</span>
+            </div>
+            <div class="apparelConfig">
+                <label id="apparelQuantity">Apparel Quantity: </label>
+                <input type="text" id="apparelCount" name="apparelCount"><br>
+            </div>
+            <div class="apparelConfig">
+                <label id="apparelCost">Apparel Cost per Piece: </label>
+                <input type="text" id="costPer" name="costPer"><br>
+            </div>
+            <div class="apparelConfig">
+            <label class="screens">Screen Charge: </label>
+                <select name="screens" id="screens">
+                    <option value="0">$0 per</option>
+                    <option value="10">$10 per</option>
+                    <option value="15">$15 per</option>
+                </select>
+            </div>
+        </div>
+        <div class="checkConfig">
+            <input type="checkbox" class="check-box" id="underprint" name="underprint" value="underprint">
+            <label for="underprint">Under print</label>
+            <input type="checkbox" class="check-box" id="flash" name="flash" value="flash">
+            <label for="flash">Flash</label>
+            <input type="checkbox" class="check-box" id="sleevePrint" name="sleevePrint" value="sleevePrint">
+            <label for="sleevePrint">Sleeve print</label>
+            <input type="checkbox" class="check-box" id="sweater" name="sweater" value="sweater">
+            <label for="sweater">Sweater print+</label>
+            <input type="checkbox" class="check-box" id="lessMin" name="lessMin" value="lessMin">
+            <label for="lessMin">Less than minimum</label>
+        </div>
+        <div class="total">
+            <div class="subTotalText">Per Print Cost: <span id="perPrint"></span></div>
+            <div class="subTotalText">Sub Total: <span id="subTotal"></span></div>
+            <div class="finalTotalText">Order Total: <span id="finalTotal"></span></div>
+        </div>
+        <div class="sendIt"><button id="submitOrder">Submit</button></div>
+    </div>
+</body>
+</html>
