@@ -322,13 +322,14 @@ input[type=submit]{
 
 .socialMedia a:link{
     text-decoration: none;
+    color: white;
 }
 
 .socialMedia a:visited {
     color: white;
 }
 
-a:hover {
+.socialMedia a:hover {
     color: var(--secondaryColor);
 }
 
