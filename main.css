@@ -62,6 +62,10 @@ a:active {
     font-size: 150%;
 }
 
+#homeTab{
+    padding-left: 50px;
+}
+
 
 /* About Body */
 .aboutBody{
